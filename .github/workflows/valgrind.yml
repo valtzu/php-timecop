@@ -98,6 +98,7 @@ jobs:
         run: |
           ./configure \
             --with-valgrind \
+            --enable-zts \
             --enable-debug \
             --enable-phpdbg \
             --without-libxml \
