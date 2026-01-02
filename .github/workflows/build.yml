@@ -27,8 +27,6 @@ jobs:
         exclude:
           - php-version: '8.3'
             php-zts: 'ts'
-          - php-version: '8.4'
-            php-zts: 'ts'
           - php-version: '8.5'
             php-zts: 'ts'
     steps:
