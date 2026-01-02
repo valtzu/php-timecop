@@ -1,0 +1,16 @@
+services:
+  php:
+    build:
+      dockerfile_inline: |
+        FROM php:8.4-zts
+        RUN apt-get update -y && apt-get install -y git
+    working_dir: /src
+    volumes: [.:/src]
+    command:
+    - sh
+    - -c
+    - |
+      phpize ;
+      ./configure ;
+      make ;
+      make test
